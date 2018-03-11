@@ -1,0 +1,327 @@
+/*!
+ * Stylesheet for AT&T Lead Engineers project
+ * Created by: Toslim Arif (ta147p)
+ */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+    margin-top: 65px;
+}
+
+
+.navbar-brand {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    padding: 7px;
+}
+
+.navbar-inverse {
+    background-color: black;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #E9E9E9; /* light grey */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 4px 6px 4px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600; 
+    color: #7D7D7D;
+    display: block;    
+}
+
+.sidenav hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0; 
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: rgba(102,102,102,1);
+}
+
+/* Side color block for different menu */
+.sidenav-color-block {
+    width: 100%;
+    height: 175px;
+    background-color: #31CCFF;
+    position: absolute;
+    bottom: 0;
+}
+
+.sidenav-color-block-2 {
+    width: 100%;
+    height: 140px;
+    background-color: #31CCFF;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Position center from the bottom */
+.sidenav-color-block img, .sidenav-color-block-2 img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+}
+
+/* The navigation menu links */
+.sidenav-color-block a, .sidenav-color-block-2 a {
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 200;
+    color: white;
+    display: inline;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav-color-block a:hover, .sidenav-color-block-2 a:hover {
+    color: #f1f1f1;
+    background-color: rgba(255,255,255,0);
+}
+
+.sidenav-color-block h5, .sidenav-color-block-2 h5 {
+    font-size: 12px;
+    padding: 0;
+    color: white;
+    display: inline;
+}
+
+.sidenav-color-block div, .sidenav-color-block-2 div {
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    left:0;
+    right: 0;
+    display: block;
+}
+
+.btn-custom-left {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    padding: 3px;
+    padding-right: 10px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none; 
+    color: white;
+}
+
+.btn-custom-right {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    padding: 3px;
+    padding-left: 5px;
+    margin-left: -3px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none; 
+    color: white;
+}
+
+
+/* Profile picture block*/
+.user-block {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Circular frame for Profile picture*/
+.user {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.user-block > h3 {
+    font-size: 16px;
+    display: block;
+    margin: 5px 0px 5px 0px;
+    color: #31CCFF;
+}
+.user-block > h5 {
+    display: block;
+    font-size: 12px;
+    margin: 5px 0px 3px 0px;
+    font-weight: 600;    
+}
+.user-block > h6 {
+    display: block;
+    font-style: italic;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+
+
+form.search-form input[type=text] {
+    padding: 5px;
+    font-size: 15px;
+    font-style: italic;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    height: 35px;
+    background: #f1f1f1;
+}
+
+
+#page-content-wrapper {
+    
+    width: 100%;
+    position: absolute;
+    padding-left: 265px;
+}
+
+
+
+.panel {
+    margin-left: -18px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    border-top: 3px solid #31ccff;
+}
+
+.panel > .panel-heading { 
+    background-color: #fff; 
+}
+
+
+.panel > .panel-heading h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    line-height: 33.5px;
+}
+
+.panel > .panel-heading h5 {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.panel .panel-footer {    
+    background-color: #fff;
+}
+
+.btn-switch {
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    background-color: #31ccff;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.btn-switch:hover {
+    background-color: white;
+    color: #31ccff;
+}
+
+#favPanel {
+  padding: 0px;  
+}
+#favPanel hr {
+  margin: 0;
+}
+
+#favPanel div {
+  padding: 5px 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#favPanel div:hover {
+  background-color: #f1f1f1;
+}
+
+#favPanel h4 {
+  margin-left: 5px;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 200;
+  text-align: right;
+  display: inline;
+}
+
+#favPanel a {
+  font-size: 13px;
+}
+
+#favPanel h3 {
+  margin-top: 13px;
+  font-size: 13px;
+  font-weight: 600;
+  color: coral;
+}
+
+#notificationPanel a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.border-between > [class*='col-']:before {
+   background: #e3e3e3;
+   bottom: 0;
+   content: " ";
+   left: 0;
+   position: absolute;
+   width: 1px;
+   top: 0;
+}
+
+.border-between > [class*='col-']:first-child:before {
+   display: none;
+}
+
+#selectFavTable {
+  margin-bottom: -10px;
+}
+
+#favToolModal h3 {
+  display: inline;
+}
+
+#no_notification h3 {
+  margin-top: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  color: coral;
+}

@@ -1,0 +1,459 @@
+/*!
+ * Stylesheet for AT&T Lead Engineers project
+ * Created by: Toslim Arif (ta147p)
+ */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+    margin-top: 65px;
+}
+
+
+.navbar-brand {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    padding: 7px;
+}
+
+.navbar-inverse {
+    background-color: black;
+}
+
+#active-menu {
+    color: white;
+    background-color: black;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #27272a; /* light grey */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600; 
+    color: #7D7D7D;
+    display: block;    
+}
+
+.sidenav hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 0;
+    padding: 0; 
+}
+
+.sidenav h5 {
+    color: white;
+}
+
+.sidenav h6 {
+    color: #7d7d7d;
+}
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: black;
+}
+
+/* Side color block for different menu */
+.sidenav-color-block {
+    height: 175px;
+    width: 100%;
+    background-color: #31CCFF;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+/* Position center from the bottom */
+.sidenav-color-block img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+}
+
+/* The navigation menu links */
+.sidenav-color-block a {
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 200;
+    color: white;
+    display: inline;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav-color-block a:hover {
+    color: #f1f1f1;
+    background-color: rgba(255,255,255,0);
+}
+
+.sidenav-color-block h5 {
+    font-size: 12px;
+    padding: 0;
+    color: white;
+    display: inline;
+}
+
+.sidenav-color-block div {
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    left:0;
+    right: 0;
+    display: block;
+}
+
+.btn-custom-left {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    padding: 3px;
+    padding-right: 10px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none; 
+    color: white;
+}
+
+.btn-custom-right {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    padding: 3px;
+    padding-left: 5px;
+    margin-left: -3px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none; 
+    color: white;
+}
+
+
+/* Profile picture block*/
+.user-block {
+    display: block;
+    text-align: center;
+    margin-top: 56px;
+}
+
+/* Circular frame for Profile picture*/
+.user {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.user-block > h3 {
+    display: block;
+    margin: 5px 0px 5px 0px;
+    color: #31CCFF;
+}
+.user-block > h5 {
+    display: block;
+    margin: 5px 0px 3px 0px;
+    font-weight: 600;    
+}
+.user-block > h6 {
+    display: block;
+    font-style: italic;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+/* Search box */
+* {
+    box-sizing: border-box;
+}
+
+form.search-form input[type=text] {
+    padding: 5px;
+    font-size: 15px;
+    font-style: italic;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.search-form button {
+    float: left;
+    padding: 5px;
+    width: 20%;
+    background: #31CCFF;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search-form button:hover {
+    background: #0b7dda;
+}
+
+form.search-form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#page-content-wrapper {
+    
+    width: 100%;
+    position: absolute;
+    padding-left: 250px;
+}
+
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #31ccff;
+    border-color: #337ab7;
+}
+
+.table-wrapper {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+    border-top: 1px solid #31ccff;
+}
+
+.header-wrapper {
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    border-top: 3px solid #31ccff;
+    
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 33.5px;
+    color: #7d7d7d;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-blue {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button-blue:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-custom {
+    color: #31ccff;
+    padding: 6px 10px 6px 10px;
+    border: 1px solid #31ccff;
+}
+.btn-custom:hover {
+    color: white;
+    background-color: #31ccff;
+}
+
+.panel {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-top: 3px solid #31ccff;
+}
+
+.panel > .panel-heading { 
+    background-color: #fff; 
+}
+
+.panel > .panel-heading  a{ 
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 33.5px;
+}
+
+.panel > .panel-heading h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    line-height: 33.5px;
+}
+
+.panel .panel-footer {    
+    background-color: #fff;
+}
+
+.panel-body hr {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.panel-body select {
+  border-radius: 0px;
+  font-size: 15px;
+}
+
+.btn-switch {
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    background-color: #31ccff;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.btn-switch:hover {
+    background-color: white;
+    color: #31ccff;
+}
+
+
+#searchUser {
+  padding: 10px 10px 10px 40px;
+  background-image: url('../img/search.svg');
+  background-size: 20px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+  max-width: 200px;
+  font-size: 15px;
+}
+
+#searchTool {
+  padding: 10px 10px 10px 40px;
+  background-image: url('../img/search.svg');
+  background-size: 20px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+  max-width: 200px;
+  margin-left: 25px;
+  font-size: 15px;
+}
+
+.card {
+  height: 130px;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card > .card-green {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #1DBB99;
+}
+
+.card > .card-blue {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #37B0E9;
+}
+
+.card > .card-orange {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #F35958;
+}
+
+.card > .card-yellow {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #F7CF5F;
+}
+
+.card > .card-violet {
+  padding: 10px;
+  color: white;
+  background-color: #6D5EAC;
+}
+
+.card-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 15px;
+}
+
+.card h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.card p{
+  padding: 0px;
+  margin: 0;
+}
+
+.card a {
+  color: white;
+}
+
+.card hr {
+  margin: 0;
+  margin-left: -10px;
+  margin-bottom: 7px;
+  padding: 0;
+  width: 40%;
+/*
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+*/
+}
+
