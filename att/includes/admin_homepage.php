@@ -12,39 +12,14 @@
 
           function drawOTPChart() {
             
-            var data = google.visualization.arrayToDataTable([
-              ['Task Completed By', 'Create Technical Notes'],
-              ['Manjunatha',    11.48],
-              ['Dhritiman',     100],
-              ['Javare',        100],
-              ['Gaurav',        100],
-              ['Vijayakumar',   100],
-              ['Santosh',       100],
-              ['Vijayabhasker', 100],
-              ['Mahendra',      100],
-              ['Anirudha',      100],
-              ['Sankarganesh',  100],
-              ['Prathin',       97.06],
-              ['Devender',      100],
-              ['Hema Kumar',    100]
-              
-            ]);
+            var data = google.visualization.arrayToDataTable();
 
             var options = {
               chart: {
                 subtitle: 'Karthik Shankar, AVPN, Jan-2018',
               },
-              hAxis: {
-                title: 'Task Completed By',
-                titleTextStyle: {
-                 fontSize: 15,
-                  italic: true
-                },
-                textStyle: {fontSize: 8},
-              },
-              vAxis: {format: 'decimal'},
-              height: 200,
-              bar: { groupWidth: '50%' },
+              height: 400,
+              bars: 'horizontal',
               legend: { position: 'none' },
 //              series: {
 //                0:{color:'#90d1df'},
@@ -116,23 +91,7 @@
         
           function drawProductivityChart() {
             
-            var data = google.visualization.arrayToDataTable([
-              ['Task Completed By', 'Create Technical Notes', 'Customer Lan Migration', 'Disco IP Address', 'Other', 'RDS Completed Order', 'Return IP Address', 'Site Completion by ND'],
-              ['Manjunatha',    61, 0, 7, 1, 56, 7, 1],
-              ['Dhritiman',     8,  0, 0, 0, 1,  2, 0],
-              ['Javare',        37, 0, 3, 2, 51, 5, 2],
-              ['Gaurav',        2,  0, 0, 0, 0,  0, 1],
-              ['Vijayakumar',   7,  0, 1, 5, 38, 3, 0],
-              ['Santosh',       3,  0, 0, 0, 2,  3, 0],
-              ['Vijayabhasker', 10, 0, 1, 0, 22, 1, 0],
-              ['Mahendra',      16, 0, 0, 0, 10, 3, 1],
-              ['Anirudha',      3,  0, 2, 0, 22, 1, 0],
-              ['Sankarganesh',  8,  0, 0, 0, 0,  0, 0],
-              ['Prathin',       34, 1, 3, 0, 30, 7, 0],
-              ['Devender',      26, 0, 3, 0, 72, 0, 0],
-              ['Hema Kumar',    10, 0, 7, 0, 12, 1, 0]
-              
-            ]);
+            var data = google.visualization.arrayToDataTable();
 
             var options = {
               bars: 'horizontal',
@@ -320,11 +279,12 @@
                 </form>                     
 -->
 
-                <div ><hr>
-                    <a href="../pages/home.php"><i class="fa fa-home fa-fw" style="font-size: 24px"></i> HOME</a><hr>
-                    <a href="#"><i class="fa fa-tachometer fa-fw" style="font-size: 24px"></i> DASHBOARD</a><hr>
-                    <a href="../pages/tools.php"><i class="fa fa-cogs fa-fw" style="font-size: 24px"></i> TOOLS</a><hr>
-                    <a href="#"><i class="fa fa-graduation-cap fa-fw" style="font-size: 24px"></i> TRAININGS</a><hr>
+                <div >
+                    <a href="home.php"><i class="fa fa-home fa-fw" style="font-size: 24px"></i> HOME</a><hr>
+                    <a href="dashboard.php"><i class="fa fa-tachometer fa-fw" style="font-size: 24px"></i> DASHBOARD</a><hr>
+                    <a href="dss.php"><i class="fa fa-file-excel-o fa-fw" style="font-size: 24px"></i> DSS</a><hr>
+                    <a href="tools.php"><i class="fa fa-cogs fa-fw" style="font-size: 24px"></i> TOOLS</a><hr>
+                    <a href="trainings.php"><i class="fa fa-graduation-cap fa-fw" style="font-size: 24px"></i> TRAININGS</a><hr>
                 </div>
               
                 <div class="sidenav-color-block">
@@ -357,7 +317,7 @@
                         <div class="col-xs-12 col-md-9">
                           
                           <div class="row">
-                            <div class="col-md-12 col-lg-12">
+                            <div class="col-md-12 col-lg-6">
                               <div class="panel panel-default">
                                 <div class="panel-heading">
                                   <h5><i class="fa fa-calendar"></i> On Time Performance</h5>                            
@@ -365,9 +325,6 @@
                                 <div class="panel-body" id="chart_space"></div>
                               </div>
                             </div>
-                          </div>
-                          
-                          <div class="row">
                             
                             <div class="col-md-12 col-lg-6">
                               <div class="panel panel-default">
@@ -376,9 +333,14 @@
                                 </div>
                                 <div class="panel-body" id="chart_cycle_time"></div>
                               </div>
-                            </div>
+                            </div>  
+                              
+                              
+                          </div>
+                          
+                          <div class="row">
                             
-                            <div class="col-md-12 col-lg-6">
+                            <div class="col-md-12">
                               <div class="panel panel-default">
                                 <div class="panel-heading">
                                   <h5><i class="fa fa-bar-chart"></i> Productivity</h5>  

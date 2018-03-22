@@ -1,14 +1,5 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "att";
-    
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-    
-    if (mysqli_connect_errno($conn)) {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    }
+    include "../includes/db.php";
   
     /* Displays user information and some useful messages */
     session_start();
@@ -36,7 +27,7 @@
     $result = mysqli_query($conn, $sql);
     
     $row = mysqli_fetch_assoc($result);
-    $data[] = array('Tasks Completed', (float)$row['Create_Technical_Notes'], (float)$row['Customer_LAN_Migration'], (float)$row['Disco_IP_Address'], (float)$row['Other'], (float)$row['RDS_Completed_Order'], (float)$row['Return_IP_address'], (float)$row['Site_Completion_by_ND']);
+    $data[] = array('Nov - 2017', (float)$row['Create_Technical_Notes'], (float)$row['Customer_LAN_Migration'], (float)$row['Disco_IP_Address'], (float)$row['Other'], (float)$row['RDS_Completed_Order'], (float)$row['Return_IP_address'], (float)$row['Site_Completion_by_ND']);
 //    $data[] = array("Disco IP Address", (float)$row['Disco_IP_Address']);
 //    $data[] = array("Other", (float)$row['Other']);
 //    $data[] = array("RDS Completed Order", (float)$row['RDS_Completed_Order']);
@@ -45,6 +36,8 @@
     
 //      
 //    $data[] = array($row[''], (int)$row['']);
-    
+    $data[] = array('Dec - 2017', (float)$row['Create_Technical_Notes'], (float)$row['Customer_LAN_Migration'], (float)$row['Disco_IP_Address'], (float)$row['Other'], (float)$row['RDS_Completed_Order'], (float)$row['Return_IP_address'], (float)$row['Site_Completion_by_ND']);
+
+    $data[] = array('Jan - 2018', (float)$row['Create_Technical_Notes'], (float)$row['Customer_LAN_Migration'], (float)$row['Disco_IP_Address'], (float)$row['Other'], (float)$row['RDS_Completed_Order'], (float)$row['Return_IP_address'], (float)$row['Site_Completion_by_ND']);
     echo json_encode($data);
 ?>

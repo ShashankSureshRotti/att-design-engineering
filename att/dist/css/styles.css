@@ -210,7 +210,7 @@ form.search-form input[type=text] {
 
 
 .panel {
-    margin-left: -18px;
+    margin-left: -15px;
     margin-bottom: 15px;
     border-radius: 0px;
     border-top: 3px solid #31ccff;
@@ -324,4 +324,96 @@ form.search-form input[type=text] {
   font-size: 15px;
   font-weight: 600;
   color: coral;
+}
+
+.card {
+  height: 130px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card > .card-green {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #1DBB99;
+}
+
+.card > .card-blue {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #37B0E9;
+}
+
+.card > .card-orange {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #F35958;
+}
+
+.card > .card-yellow {
+  height: 130px;
+  padding: 10px;
+  color: white;
+  background-color: #F7CF5F;
+}
+
+.card > .card-violet {
+  padding: 10px;
+  color: white;
+  background-color: #6D5EAC;
+}
+
+.card-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 15px;
+}
+
+.card h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.card p{
+  padding: 0px;
+  margin: 0;
+}
+
+.card a {
+  color: white;
+}
+
+.card hr {
+  margin: 0;
+  margin-left: -10px;
+  margin-bottom: 7px;
+  padding: 0;
+  width: 40%;
+/*
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+*/
+}
+
+#dssTable {
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+}
+
+.test hr {
+		margin-top: 15px;
+		margin-bottom: 2px;
 }

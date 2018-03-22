@@ -52,11 +52,11 @@
             <div class="sidenav">
                 <div class="user-block">
                     <!-- Profile picture -->
-                    <img src="../dist/img/Arif_DP.jpg" class="user">
+                    <img src="../dist/img/nobody.jpg" class="user">
                     <!-- Name -->
-                    <h3>Toslim Arif</h3>
+                    <h3><?php echo $first_name." ".$last_name; ?></h3>
                     <!-- Designation -->
-                    <h5>Technical Intern</h5>
+                    <h5>Static Till Now</h5>
                     <!-- Status Message -->
                     <h6>This is a status message!</h6>
                    
@@ -69,17 +69,15 @@
                 </form>                     
 -->
 
-                <div ><hr>
-                    <a href="../pages/home.php"><i class="fa fa-home fa-fw" style="font-size: 24px"></i> HOME</a><hr>
-                    <a href="#"><i class="fa fa-tachometer fa-fw" style="font-size: 24px"></i> DASHBOARD</a><hr>
-                    <a href="../pages/tools.php"><i class="fa fa-cogs fa-fw" style="font-size: 24px"></i> TOOLS</a><hr>
-                    <a href="#"><i class="fa fa-graduation-cap fa-fw" style="font-size: 24px"></i> TRAININGS</a><hr>
+                <div >
+                    <a href="home.php"><i class="fa fa-home fa-fw" style="font-size: 24px"></i> HOME</a><hr>
+                    <a href="dashboard.php"><i class="fa fa-tachometer fa-fw" style="font-size: 24px"></i> DASHBOARD</a><hr>
+                    <a href="dss.php"><i class="fa fa-file-excel-o fa-fw" style="font-size: 24px"></i> DSS</a><hr>
+                    <a href="tools.php"><i class="fa fa-cogs fa-fw" style="font-size: 24px"></i> TOOLS</a><hr>
+                    <a href="trainings.php"><i class="fa fa-graduation-cap fa-fw" style="font-size: 24px"></i> TRAININGS</a><hr>
                 </div>
 
-                <div class="sidenav-color-block">
-                    <div style="margin-bottom: 120px; text-align: center" id="btnHolder">
-                        <button type="button" class="btn-switch" onclick="location.href='../admin/pages/dashboard.php';">ADMIN</button>
-                    </div>
+                <div class="sidenav-color-block-2">
                     <div style="margin-bottom: 80px; text-align: center">
                         <button type="button" class="btn-custom-left"><i class="fa fa-cog fa-fw"></i> SETTING</button>
                         <button type="button" class="btn-custom-right" onclick="location.href='../logout.php';"><i class="fa fa-sign-out fa-fw"></i> SIGNOUT</button>
@@ -94,7 +92,6 @@
                         <a href="#">ABOUT</a>
                     </div>
                 </div>
-
             </div>
           
             <!-- Page content -->

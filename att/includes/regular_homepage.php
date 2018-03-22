@@ -23,7 +23,8 @@
             );
 
             var options = {
-                height: 250,            
+                height: 250,
+                bar: {groupWidth: "70%"},
             };
 
             var chart = new google.charts.Bar(document.getElementById('chart_OTP'));
@@ -67,7 +68,18 @@
 
             var options = {
                 height: 200, 
-                legend: {position: 'none'}
+                legend: {position: 'none'},
+                isStacked: true,
+
+                series: {
+                   0:{color:'#8ec127'},
+                   1:{color:'#d41243'},
+                   2:{color:'#f47835'},
+                   3:{color:'#a200ff'},
+                   4:{color:'#00aedb'},
+                   5:{color:'#66cc66'},
+                   6:{color:'#6b7a8f'}
+                 },            
             };
 
             var chart = new google.charts.Bar(document.getElementById('chart_Productivity'));
@@ -228,10 +240,11 @@
 -->
 
                 <div >
-                    <a href="../pages/home.php"><i class="fa fa-home fa-fw" style="font-size: 24px"></i> HOME</a><hr>
-                    <a href="#"><i class="fa fa-tachometer fa-fw" style="font-size: 24px"></i> DASHBOARD</a><hr>
-                    <a href="../pages/tools.php"><i class="fa fa-cogs fa-fw" style="font-size: 24px"></i> TOOLS</a><hr>
-                    <a href="#"><i class="fa fa-graduation-cap fa-fw" style="font-size: 24px"></i> TRAININGS</a><hr>
+                    <a href="home.php"><i class="fa fa-home fa-fw" style="font-size: 24px"></i> HOME</a><hr>
+                    <a href="dashboard.php"><i class="fa fa-tachometer fa-fw" style="font-size: 24px"></i> DASHBOARD</a><hr>
+                    <a href="dss.php"><i class="fa fa-file-excel-o fa-fw" style="font-size: 24px"></i> DSS</a><hr>
+                    <a href="tools.php"><i class="fa fa-cogs fa-fw" style="font-size: 24px"></i> TOOLS</a><hr>
+                    <a href="trainings.php"><i class="fa fa-graduation-cap fa-fw" style="font-size: 24px"></i> TRAININGS</a><hr>
                 </div>
               
                 <div class="sidenav-color-block-2">

@@ -1,14 +1,5 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "att";
-    
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-    
-    if (mysqli_connect_errno($conn)) {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    }
+    include "../includes/db.php";
   
     /* Displays user information and some useful messages */
     session_start();
@@ -31,12 +22,12 @@
     }
 
 
-    $data[] = array("", "Create Technical Notes", "Customer LAN Migration", "Disco IP Address", "Other", "RDS Completed Order", "Return IP Address", "Site Completion by ND");
+    $data[] = array("", "Customer LAN Migration", "Disco IP Address", "Other", "RDS Completed Order", "Return IP Address", "Site Completion by ND");
     $sql = "SELECT * FROM cycletime_avpn WHERE TaskCompletedBY = '{$name}'";
     $result = mysqli_query($conn, $sql);
     
     $row = mysqli_fetch_assoc($result);
-    $data[] = array('Cycle Time', (float)$row['Create_Technical_Notes'], (float)$row['Customer_LAN_Migration'], (float)$row['Disco_IP_Address'], (float)$row['Other'], (float)$row['RDS_Completed_Order'], (float)$row['Return_IP_address'], (float)$row['Site_Completion_by_ND']);
+    $data[] = array('Cycle Time', (float)$row['Customer_LAN_Migration'], (float)$row['Disco_IP_Address'], (float)$row['Other'], (float)$row['RDS_Completed_Order'], (float)$row['Return_IP_address'], (float)$row['Site_Completion_by_ND']);
 //    $data[] = array("Disco IP Address", (float)$row['Disco_IP_Address']);
 //    $data[] = array("Other", (float)$row['Other']);
 //    $data[] = array("RDS Completed Order", (float)$row['RDS_Completed_Order']);
